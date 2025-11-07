@@ -1,0 +1,31 @@
+.tech_specs_block {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid #d8d8d8;
+	background: var(--background-color);
+	padding: 80px 120px;
+	transition: all 190ms ease-in;
+}
+
+.tech_specs_block:hover {
+	background: #f2ebe3;
+}
+
+.tech_title {
+	width: 300px;
+	font-weight: 600;
+	font-size: 32px;
+	text-transform: capitalize;
+	margin-right: 20px;
+	color: var(--accent-color);
+}
+
+.tech_text {
+	width: 700px;
+	font-size: 18px;
+	line-height: 278%;
+}
+
+.tech_text span {
+	font-weight: 700;
+}

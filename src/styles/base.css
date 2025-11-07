@@ -1,0 +1,72 @@
+:root {
+	--font-family: "Poppins", sans-serif;
+	--max-width: 100%;
+	--margin: 0 auto;
+	--text-color: #8B8782;
+	--accent-color: #52483E;
+	--white-color: #FFFFFF;
+	--dark-color: #3B3B3B;
+	--black-color: #000000;
+	--background-color: #F5F5F5;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("/public/fonts/Poppins-Regular.woff2") format("woff2"),
+		url("/public/fonts/Poppins-Regular.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("/public/fonts/Poppins-Medium.woff2") format("woff2"),
+		url("/public/fonts/Poppins-Medium.woff") format("woff");
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("/public/fonts/Poppins-SemiBold.woff2") format("woff2"),
+		url("/public/fonts/Poppins-SemiBold.woff") format("woff");
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.container {
+	max-width: var(--max-width);
+	margin: var(--margin);
+}
+
+body {
+	font-family: var(--font-family);
+	font-size: 18px;
+	font-weight: 400;
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+
+/* Класс, который добавляется к body при открытии мобильного меню */
+.no-scroll {
+	overflow: hidden;
+	touch-action: none;
+	overscroll-behavior: none;
+}
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex: 1 1 auto;
+}

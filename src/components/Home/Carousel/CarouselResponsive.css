@@ -1,0 +1,27 @@
+@media (max-width: 900px) {
+	.slider_carousel {
+		height: 320px;
+	}
+
+	.nav.left {
+		left: -30px;
+	}
+
+	.nav.right {
+		right: -30px;
+	}
+
+	.card-container {
+		width: 80%;
+	}
+}
+
+@media (max-width: 480px) {
+	.slider_carousel {
+		height: 260px;
+	}
+
+	.card-container {
+		width: 95%;
+	}
+}

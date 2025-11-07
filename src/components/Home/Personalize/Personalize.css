@@ -1,0 +1,31 @@
+.personalize {
+	padding: 80px 80px 160px 80px;
+	text-align: center;
+}
+
+.personalize_title {
+	font-weight: 600;
+	font-size: 56px;
+	text-transform: capitalize;
+	margin-bottom: 16px;
+	color: var(--accent-color);
+}
+
+.personalize_text {
+	font-size: 24px;
+	margin-bottom: 80px;
+}
+
+.personalize_block {
+	display: flex;
+	gap: 16px;
+}
+
+.personalize_block img {
+	width: 100%;
+	transition: all 190ms ease-in;
+}
+
+.personalize_block img:hover {
+	transform: scale(1.02);
+}

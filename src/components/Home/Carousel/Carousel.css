@@ -1,0 +1,124 @@
+.carousel {
+	padding: 80px 0;
+	text-align: center;
+}
+
+.carousel_title {
+	font-weight: 600;
+	font-size: 56px;
+	text-transform: capitalize;
+	margin-bottom: 16px;
+	color: var(--accent-color);
+}
+
+.carousel_text {
+	font-size: 24px;
+	margin-bottom: 24px;
+}
+
+.slider_carousel {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+	height: 660px;
+	margin-bottom: 24px;
+	perspective: 800px;
+	overflow: hidden;
+}
+
+.carousel__track {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.card-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%) translateZ(-50rem);
+	width: 50%;
+	height: 100%;
+	transition: all 2.5s cubic-bezier(.2, .8, .2, 1);
+	filter: blur(1.2px);
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-container .card {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+}
+
+.card-container img {
+	/* width: 100%;
+	height: auto;
+	object-fit: contain; */
+	transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+.card-container.active {
+	transform: translateX(-50%) translateZ(0) scale(1);
+	opacity: 1;
+	filter: blur(0);
+	z-index: 3;
+}
+
+.card-container.prev {
+	transform: translateX(calc(-50% - 70%)) rotateY(25deg) translateZ(-18rem) scale(0.68);
+	opacity: 0.85;
+	filter: blur(7px);
+	z-index: 2;
+}
+
+.card-container.next {
+	transform: translateX(calc(-50% + 70%)) rotateY(-25deg) translateZ(-18rem) scale(0.68);
+	opacity: 0.85;
+	filter: blur(7px);
+	z-index: 2;
+}
+
+.carousel-pagination {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	margin-bottom: 32px;
+}
+
+.dot {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: transform .2s ease, opacity .2s ease, box-shadow .2s ease;
+}
+
+.dot.yellow {
+	background: #D8B74B;
+}
+
+.dot.green {
+	background: #94915B;
+}
+
+.dot.red {
+	background: #883D39;
+}
+
+.dot.active {
+	transform: scale(1.25);
+	opacity: 1;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, .50);
+}
+
+.color_text {
+	font-size: 24px;
+}

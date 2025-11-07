@@ -1,0 +1,23 @@
+{
+  "name": "resonance",
+  "version": "1.0.0",
+  "description": "resonance",
+  "type": "module",
+  "homepage": "https://loitweb.github.io/resonance",
+  "scripts": {
+    "dev": "parcel src/index.html --open",
+    "build": "parcel build src/index.html --public-url ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.16.0"
+  },
+  "dependencies": {
+    "swiper": "^12.0.3"
+  }
+}

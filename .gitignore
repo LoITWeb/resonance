@@ -7,3 +7,7 @@ dist/
 
 # системные файлы
 .DS_Store
+
+content.html
+.htaccess
+package-lock.json

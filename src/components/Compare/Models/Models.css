@@ -1,0 +1,40 @@
+.models {
+	padding: 80px 142px;
+	text-align: center;
+}
+
+.models_title {
+font-weight: 600;
+font-size: 56px;
+text-transform: capitalize;
+margin-bottom: 8px;
+color: var(--accent-color);
+}
+
+.models_text {
+font-size: 24px;
+margin-bottom: 42px;
+}
+
+.models_block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.models_card {
+	background-color: var(--white-color);
+}
+
+.models_img_block {}
+
+.models_img_title {}
+
+.models_price {}
+
+.models_btn {}
+
+.compare_content {}
+
+.compare_block {}
+
+.compare_text {}

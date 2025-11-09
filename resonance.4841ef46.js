@@ -755,7 +755,7 @@ function Header() {
       <div class="container">
         <nav class="nav">
 
-	  			<a href="#/">
+	  			<a href="#/" class="logo">
             <img src="${logoUrl}" alt="Logo" />
           </a>
 
@@ -842,20 +842,22 @@ function Footer() {
 					<a href="#!" class="footer_btn">Flow II</a>
 				</div>
 				<div class="footer_sub">
-					<a href="#/">
+					<a href="#/" class="footer_logo">
 						<img src="${logoUrl}" alt="Logo" />
 					</a>
-					<div class="footer_socials">
+					<div class="sicial_block">
 						<p class="copyright">\xa9 2025 Resonance. All rights reserved.</p>
-						<a href="#!">
-							<img src="${discordUrl}" alt="Discord" />
-						</a>
-						<a href="#!">
-							<img src="${xUrl}" alt="X" />
-						</a>
-						<a href="#!">
-							<img src="${metaUrl}" alt="Meta" />
-						</a>
+						<div class="footer_socials">
+							<a href="#!">
+								<img src="${discordUrl}" alt="Discord" />
+							</a>
+							<a href="#!">
+								<img src="${xUrl}" alt="X" />
+							</a>
+							<a href="#!">
+								<img src="${metaUrl}" alt="Meta" />
+							</a>
+						</div>
 					</div>
 				</div>
       </div>
@@ -940,11 +942,11 @@ parcelHelpers.export(exports, "Home", ()=>Home);
 var _indexJs = require("./index.js");
 function Home() {
     return `
-    ${(0, _indexJs.Hero)()}                                                                                      
-    ${(0, _indexJs.Carousel)()}                                                                                      
-    ${(0, _indexJs.Features)()}                                                                                      
-    ${(0, _indexJs.Personalize)()}                                                                                      
-    ${(0, _indexJs.Sub)()}                                                                                      
+    ${''}                                                                                      
+    ${''}                                                                                      
+    ${''}                                                                                      
+    ${''}                                                                                      
+    ${''}                                                                                      
   `;
 }
 

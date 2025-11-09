@@ -147,10 +147,8 @@ body {
 }
 
 .header {
-  z-index: 9;
   background-color: #0000;
   padding: 24px;
-  position: relative;
 }
 
 .nav {
@@ -162,10 +160,6 @@ body {
 .nav__list {
   gap: 16px;
   display: flex;
-
-  @media (width <= 768px) {
-    display: none;
-  }
 }
 
 .nav_link {
@@ -190,10 +184,6 @@ body {
 
 .nav__icon {
   display: none;
-
-  @media (width <= 768px) {
-    display: block;
-  }
 }
 
 .mobile-nav-btn {
@@ -296,6 +286,16 @@ body {
   display: flex;
 }
 
+@media (width <= 768px) {
+  .nav__list {
+    display: none;
+  }
+
+  .nav__icon {
+    display: block;
+  }
+}
+
 .footer {
   text-align: center;
   background: linear-gradient(#f5f5f5 0%, #d2cdc6 100%);
@@ -351,7 +351,7 @@ body {
   display: flex;
 }
 
-.footer_socials {
+.sicial_block, .footer_socials {
   align-items: center;
   gap: 16px;
   display: flex;
@@ -361,6 +361,21 @@ body {
   color: var(--accent-color);
   font-size: 16px;
   line-height: 312%;
+}
+
+@media (width <= 768px) {
+  .footer_sub {
+    padding: 24px;
+    display: block;
+  }
+
+  .footer_logo {
+    display: none;
+  }
+
+  .sicial_block {
+    justify-content: space-between;
+  }
 }
 
 .hero {
@@ -866,11 +881,59 @@ body {
 }
 
 .models_block {
-  justify-content: space-between;
+  gap: 30px;
   display: flex;
 }
 
 .models_card {
   background-color: var(--white-color);
+  border-radius: 24px;
+  width: -webkit-fill-available;
+  padding: 24px 24px 60px;
+}
+
+.models_img_block {
+  background-color: var(--background-color);
+  border-radius: 24px;
+  margin-bottom: 42px;
+  padding: 24px;
+
+  & img {
+    margin-bottom: 42px;
+  }
+}
+
+.models_img_title {
+  text-transform: capitalize;
+  color: var(--accent-color);
+  margin-bottom: 8px;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.models_price {
+  margin-bottom: 16px;
+}
+
+.models_btn {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(#52483e 0%, #8b8782 100%);
+  border-radius: 24px;
+  padding: 10px 32px;
+  font-size: 16px;
+  position: relative;
+}
+
+.models_btn:active {
+  top: 2px;
+}
+
+.compare_block {
+  margin-bottom: 32px;
+}
+
+.compare_text {
+  padding-top: 12px;
 }
 /*# sourceMappingURL=resonance.9f367d21.css.map */

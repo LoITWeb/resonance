@@ -12,3 +12,32 @@
 		justify-content: space-between;
 	}
 }
+
+@media (max-width: 590px) {
+	.footer {
+		padding: 42px 24px 16px;
+	}
+
+	.footer_text {
+		font-size: 18px;
+	}
+
+	.footer_btn {
+		padding: 10px;
+	}
+
+	.footer_sub {
+		padding: 0;
+	}
+
+	.sicial_block {
+		display: grid;
+		justify-content: center;
+		justify-items: center;
+	}
+
+	.copyright {
+		line-height: 160%;
+		padding-top: 20px;
+	}
+}

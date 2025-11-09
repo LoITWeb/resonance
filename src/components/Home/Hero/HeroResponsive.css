@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+	.hero_back {
+		top: 50%;
+	}
+}
+
+@media (max-width: 590px) {
+	.hero {
+		padding: 0 10px;
+	}
+
+	.hero_title {
+		top: 20%;
+	}
+
+	.hero__img {
+		top: 64%;
+	}
+
+	.hero_back {
+		top: 30%;
+	}
+}
+
+@media (max-width: 420px) {
+	.hero_title {
+		font-size: 48px;
+	}
+
+	.hero_back {
+		font-size: 48px;
+	}
+}

@@ -2,8 +2,8 @@ import { Hero, Carousel, Features, Personalize, Sub } from "./index.js";
 
 export function Home() {
 	return `
-    ${/* Hero() */ ''}                                                                                      
-    ${/* Carousel() */ ''}                                                                                      
+    ${Hero()}                                                                                      
+    ${Carousel()}                                                                                      
     ${/* Features() */ ''}                                                                                      
     ${/* Personalize() */ ''}                                                                                      
     ${/* Sub() */ ''}                                                                                      

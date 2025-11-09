@@ -942,8 +942,8 @@ parcelHelpers.export(exports, "Home", ()=>Home);
 var _indexJs = require("./index.js");
 function Home() {
     return `
-    ${''}                                                                                      
-    ${''}                                                                                      
+    ${(0, _indexJs.Hero)()}                                                                                      
+    ${(0, _indexJs.Carousel)()}                                                                                      
     ${''}                                                                                      
     ${''}                                                                                      
     ${''}                                                                                      

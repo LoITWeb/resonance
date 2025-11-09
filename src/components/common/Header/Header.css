@@ -1,7 +1,5 @@
 .header {
-	position: relative;
 	background-color: transparent;
-	z-index: 9;
 	padding: 24px;
 }
 
@@ -14,10 +12,6 @@
 .nav__list {
 	display: flex;
 	gap: 16px;
-
-	@media (max-width: 768px) {
-		display: none;
-	}
 }
 
 .nav_link {
@@ -43,10 +37,6 @@
 
 .nav__icon {
 	display: none;
-
-	@media (max-width: 768px) {
-		display: block;
-	}
 }
 
 /* Nav Icon */

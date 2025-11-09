@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+	.nav__list {
+		display: none;
+	}
+
+	.nav__icon {
+		display: block;
+	}
+}

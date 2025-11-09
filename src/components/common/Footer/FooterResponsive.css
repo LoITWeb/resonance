@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+	.footer_sub {
+		display: block;
+		padding: 24px;
+	}
+
+	.footer_logo {
+		display: none;
+	}
+
+	.sicial_block {
+		justify-content: space-between;
+	}
+}

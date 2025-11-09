@@ -53,6 +53,12 @@
 	padding: 28px 80px;
 }
 
+.sicial_block {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
 .footer_socials {
 	display: flex;
 	align-items: center;

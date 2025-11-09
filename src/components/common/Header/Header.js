@@ -8,7 +8,7 @@ export function Header() {
       <div class="container">
         <nav class="nav">
 
-	  			<a href="#/">
+	  			<a href="#/" class="logo">
             <img src="${logoUrl}" alt="Logo" />
           </a>
 

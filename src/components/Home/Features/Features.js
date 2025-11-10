@@ -1,7 +1,7 @@
 import "./Features.css";
 import "./FeaturesResponsive.css";
 import { initFeaturesSlider } from "/src/scripts/features-slider.js";
-const features_1Url = new URL("./images/features_1.webp", import.meta.url).href;
+const featuresUrl = new URL("./images/features.webp", import.meta.url).href;
 
 let featuresDestroy = null;
 
@@ -15,7 +15,7 @@ export function Features() {
               <div class="features-slide ${i % 2 === 1 ? "two" : ""}">
                 <div class="features-card">
                   <p>Deep lows. Lush mids. Airy highs. All perfectly in balance.</p>
-                  <img src="${features_1Url}" alt="Feature ${i + 1}">
+                  <img src="${featuresUrl}" alt="Feature ${i + 1}">
                 </div>
               </div>
             `).join("")}

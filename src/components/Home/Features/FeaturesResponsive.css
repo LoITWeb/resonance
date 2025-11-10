@@ -1,6 +1,12 @@
 @media (max-width: 1200px) {
 	.features-slide {
-		width: 90vw;
+		width:90vw;
 		height: auto;
 	}
+
+	.features-slide p {
+		padding: 0 10px;
+	}
 }
+
+/* @media (max-width: 900px) {} */

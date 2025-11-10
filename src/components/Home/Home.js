@@ -4,7 +4,7 @@ export function Home() {
 	return `
     ${Hero()}                                                                                      
     ${Carousel()}                                                                                      
-    ${/* Features() */ ''}                                                                                      
+    ${Features()}                                                                                      
     ${/* Personalize() */ ''}                                                                                      
     ${/* Sub() */ ''}                                                                                      
   `;

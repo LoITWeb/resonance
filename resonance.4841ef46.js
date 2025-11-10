@@ -945,7 +945,7 @@ function Home() {
     ${(0, _indexJs.Hero)()}                                                                                      
     ${(0, _indexJs.Carousel)()}                                                                                      
     ${(0, _indexJs.Features)()}                                                                                      
-    ${''}                                                                                      
+    ${(0, _indexJs.Personalize)()}                                                                                      
     ${''}                                                                                      
   `;
 }
@@ -1116,23 +1116,58 @@ var _featuresCss = require("./Features.css");
 var _featuresResponsiveCss = require("./FeaturesResponsive.css");
 var _featuresSliderJs = require("/src/scripts/features-slider.js");
 const featuresUrl = new URL(require("93dc288f40d6bb7c")).href;
+const features_2Url = new URL(require("93dc288f40d6bb7c")).href;
+const features_3Url = new URL(require("93dc288f40d6bb7c")).href;
+const features_4Url = new URL(require("93dc288f40d6bb7c")).href;
+const features_5Url = new URL(require("93dc288f40d6bb7c")).href;
+const features_6Url = new URL(require("93dc288f40d6bb7c")).href;
+const features_7Url = new URL(require("93dc288f40d6bb7c")).href;
+const featuresSlides = [
+    {
+        text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
+        img: featuresUrl
+    },
+    {
+        text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
+        img: featuresUrl
+    },
+    {
+        text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
+        img: featuresUrl
+    },
+    {
+        text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
+        img: featuresUrl
+    },
+    {
+        text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
+        img: featuresUrl
+    },
+    {
+        text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
+        img: featuresUrl
+    },
+    {
+        text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
+        img: featuresUrl
+    }
+];
 let featuresDestroy = null;
 function Features() {
+    const slidesMarkup = featuresSlides.map((slide, i)=>`
+      <div class="features-slide ${i % 2 === 1 ? "two" : ""}">
+        <div class="features-card">
+          <p>${slide.text}</p>
+          <img src="${slide.img}" alt="Feature ${i + 1}">
+        </div>
+      </div>
+    `).join("");
     const markup = `
     <section class="features">
       <div class="container">
         <div class="features-slider">
           <div class="features-track">
-            ${Array.from({
-        length: 7
-    }, (_, i)=>`
-              <div class="features-slide ${i % 2 === 1 ? "two" : ""}">
-                <div class="features-card">
-                  <p>Deep lows. Lush mids. Airy highs. All perfectly in balance.</p>
-                  <img src="${featuresUrl}" alt="Feature ${i + 1}">
-                </div>
-              </div>
-            `).join("")}
+            ${slidesMarkup}
           </div>
         </div>
       </div>
@@ -1145,7 +1180,7 @@ function Features() {
             } catch (e) {}
             featuresDestroy = null;
         }
-        featuresDestroy = (0, _featuresSliderJs.initFeaturesSlider)(".features");
+        featuresDestroy = (0, _featuresSliderJs.initFeaturesSlider)(".features-slider");
     });
     return markup;
 }
@@ -1230,26 +1265,137 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Personalize", ()=>Personalize);
 var _personalizeCss = require("./Personalize.css");
 var _personalizeResponsiveCss = require("./PersonalizeResponsive.css");
+var _personalizeSliderJs = require("/src/scripts/personalize-slider.js");
 const personalize_1Url = new URL(require("7b4a2b9f23730fa")).href;
 const personalize_2Url = new URL(require("ea1552819f0d295d")).href;
 const personalize_3Url = new URL(require("d3dcc20de9975ce2")).href;
+const personalizeSlides = [
+    {
+        img: personalize_1Url
+    },
+    {
+        img: personalize_2Url
+    },
+    {
+        img: personalize_3Url
+    },
+    {
+        img: personalize_1Url
+    },
+    {
+        img: personalize_2Url
+    },
+    {
+        img: personalize_3Url
+    },
+    {
+        img: personalize_1Url
+    }
+];
+let personalizeDestroy = null;
 function Personalize() {
-    return `
+    const slidesMarkup = personalizeSlides.map((slide, i)=>`
+      <div class="personalize-slide ${i % 2 === 1 ? "two" : ""}">
+        <div class="personalize-card">
+          <img src="${slide.img}" alt="Personalize ${i + 1}">
+        </div>
+      </div>
+    `).join("");
+    const markup = `
     <section class="personalize">
-			<div class="container">
-				<h2 class="personalize_title">Every Detail matters</h2>
-				<p class="personalize_text">From the stitch to the signal, precision lives here.</p>
-				<div class="personalize_block">
-					<img src="${personalize_1Url}" alt="Personalize photo">
-					<img src="${personalize_2Url}" alt="Personalize photo">
-					<img src="${personalize_3Url}" alt="Personalize photo">
-				</div>
-			</div>
-		</section>
+      <div class="container">
+        <div class="personalize-slider">
+          <div class="personalize-track">
+            ${slidesMarkup}
+          </div>
+        </div>
+      </div>
+    </section>
   `;
+    requestAnimationFrame(()=>{
+        if (typeof personalizeDestroy === "function") {
+            try {
+                personalizeDestroy();
+            } catch (e) {}
+            personalizeDestroy = null;
+        }
+        personalizeDestroy = (0, _personalizeSliderJs.initPersonalizeSlider)(".personalize-slider");
+    });
+    return markup;
 }
 
-},{"./Personalize.css":"lAbQi","./PersonalizeResponsive.css":"1UBb0","7b4a2b9f23730fa":"abrrz","ea1552819f0d295d":"jx43S","d3dcc20de9975ce2":"fKkIw","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"lAbQi":[function() {},{}],"1UBb0":[function() {},{}],"abrrz":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","./PersonalizeResponsive.css":"1UBb0","./Personalize.css":"lAbQi","/src/scripts/personalize-slider.js":"ejDnP","7b4a2b9f23730fa":"abrrz","ea1552819f0d295d":"jx43S","d3dcc20de9975ce2":"fKkIw"}],"1UBb0":[function() {},{}],"lAbQi":[function() {},{}],"ejDnP":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "initPersonalizeSlider", ()=>initPersonalizeSlider);
+function initPersonalizeSlider(rootSelector = ".personalize-slider") {
+    const root = document.querySelector(rootSelector);
+    if (!root) return;
+    // предотвращаем повторную инициализацию
+    if (root.dataset.personalizeInit === "1") return;
+    root.dataset.personalizeInit = "1";
+    const track = root.querySelector(".personalize-track");
+    if (!track) return;
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    // --- drag мышкой ---
+    const startDragging = (e)=>{
+        isDown = true;
+        track.classList.add("grabbing");
+        startX = e.pageX - track.offsetLeft;
+        scrollLeft = track.scrollLeft;
+    };
+    const stopDragging = ()=>{
+        isDown = false;
+        track.classList.remove("grabbing");
+    };
+    const move = (e)=>{
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - track.offsetLeft;
+        const walk = (x - startX) * 1; // скорость реакции
+        track.scrollLeft = scrollLeft - walk;
+    };
+    track.addEventListener("mousedown", startDragging);
+    track.addEventListener("mouseleave", stopDragging);
+    track.addEventListener("mouseup", stopDragging);
+    track.addEventListener("mousemove", move);
+    // --- drag на тач-устройствах ---
+    let touchStartX = 0;
+    let touchScrollLeft = 0;
+    const onTouchStart = (e)=>{
+        touchStartX = e.touches[0].pageX - track.offsetLeft;
+        touchScrollLeft = track.scrollLeft;
+    };
+    const onTouchMove = (e)=>{
+        const x = e.touches[0].pageX - track.offsetLeft;
+        const walk = (x - touchStartX) * 1;
+        track.scrollLeft = touchScrollLeft - walk;
+    };
+    track.addEventListener("touchstart", onTouchStart, {
+        passive: true
+    });
+    track.addEventListener("touchmove", onTouchMove, {
+        passive: true
+    });
+    track.addEventListener("dragstart", (e)=>e.preventDefault());
+    console.log("\u2705 Personalize slider initialized");
+    // Возвращаем destroy-функцию
+    return function destroyPersonalizeSlider() {
+        root.dataset.personalizeInit = "0";
+        // снимаем все слушатели без утечек
+        track.removeEventListener("mousedown", startDragging);
+        track.removeEventListener("mouseleave", stopDragging);
+        track.removeEventListener("mouseup", stopDragging);
+        track.removeEventListener("mousemove", move);
+        track.removeEventListener("touchstart", onTouchStart);
+        track.removeEventListener("touchmove", onTouchMove);
+        console.log("\uD83E\uDDF9 Personalize slider destroyed");
+    };
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"abrrz":[function(require,module,exports,__globalThis) {
 module.exports = module.bundle.resolve("personalize_1.b376e5ca.webp") + "?" + Date.now();
 
 },{}],"jx43S":[function(require,module,exports,__globalThis) {

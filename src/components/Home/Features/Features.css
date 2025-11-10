@@ -14,7 +14,6 @@
 	overflow-x: scroll;
 	scroll-behavior: smooth;
 	scroll-snap-type: x mandatory;
-	cursor: grab;
 	user-select: none;
 	-webkit-overflow-scrolling: touch;
 }
@@ -56,6 +55,7 @@
 	display: flex;
 	align-items: center;
 	overflow: hidden;
+	cursor: grab;
 }
 
 .features-slide p {

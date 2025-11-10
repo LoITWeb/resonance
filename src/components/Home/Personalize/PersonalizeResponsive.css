@@ -1,0 +1,33 @@
+/* @media (max-width: 1200px) {
+	.personalize-slide {
+		width: 80vw;
+		height: auto;
+	}
+
+	.personalize-slide img {
+		width: 340px;
+	}
+}
+
+@media (max-width: 900px) {
+	.personalize-slide {
+		width: 50vw;
+		height: 520px;
+	}
+}
+
+@media (max-width: 768px) {
+	.personalize-slide {
+		width: 70vw;
+	}
+}
+
+@media (max-width: 590px) {
+	.personalize {
+		padding: 24px 0 24px 24px;
+	}
+
+	.personalize-slide {
+		width: 80vw;
+	}
+} */

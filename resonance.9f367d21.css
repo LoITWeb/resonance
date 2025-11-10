@@ -743,11 +743,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .features-slide img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
   transition: transform .3s;
-  display: block;
 }
 
 .features-slide:hover img {
@@ -758,6 +754,10 @@ h1, h2, h3, h4, h5, h6, p {
   .features-slide {
     width: 90vw;
     height: auto;
+  }
+
+  .features-slide p {
+    padding: 0 10px;
   }
 }
 

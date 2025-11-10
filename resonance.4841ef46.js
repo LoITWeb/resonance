@@ -944,7 +944,7 @@ function Home() {
     return `
     ${(0, _indexJs.Hero)()}                                                                                      
     ${(0, _indexJs.Carousel)()}                                                                                      
-    ${''}                                                                                      
+    ${(0, _indexJs.Features)()}                                                                                      
     ${''}                                                                                      
     ${''}                                                                                      
   `;
@@ -1115,7 +1115,7 @@ parcelHelpers.export(exports, "Features", ()=>Features);
 var _featuresCss = require("./Features.css");
 var _featuresResponsiveCss = require("./FeaturesResponsive.css");
 var _featuresSliderJs = require("/src/scripts/features-slider.js");
-const features_1Url = new URL(require("7d0a6add715abef4")).href;
+const featuresUrl = new URL(require("93dc288f40d6bb7c")).href;
 let featuresDestroy = null;
 function Features() {
     const markup = `
@@ -1129,7 +1129,7 @@ function Features() {
               <div class="features-slide ${i % 2 === 1 ? "two" : ""}">
                 <div class="features-card">
                   <p>Deep lows. Lush mids. Airy highs. All perfectly in balance.</p>
-                  <img src="${features_1Url}" alt="Feature ${i + 1}">
+                  <img src="${featuresUrl}" alt="Feature ${i + 1}">
                 </div>
               </div>
             `).join("")}
@@ -1150,7 +1150,7 @@ function Features() {
     return markup;
 }
 
-},{"./Features.css":"8v7x1","./FeaturesResponsive.css":"k5pf9","/src/scripts/features-slider.js":"pifHw","7d0a6add715abef4":"9hrNQ","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8v7x1":[function() {},{}],"k5pf9":[function() {},{}],"pifHw":[function(require,module,exports,__globalThis) {
+},{"./Features.css":"8v7x1","./FeaturesResponsive.css":"k5pf9","/src/scripts/features-slider.js":"pifHw","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","93dc288f40d6bb7c":"9AGU5"}],"8v7x1":[function() {},{}],"k5pf9":[function() {},{}],"pifHw":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "initFeaturesSlider", ()=>initFeaturesSlider);
@@ -1221,8 +1221,8 @@ function initFeaturesSlider(rootSelector = ".features-slider") {
     };
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"9hrNQ":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("features_1.88ac7397.webp") + "?" + Date.now();
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"9AGU5":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("features.3784dacd.webp") + "?" + Date.now();
 
 },{}],"gkwl6":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -1649,7 +1649,7 @@ function Models() {
   `;
 }
 
-},{"./Models.css":"cCmbh","./ModelsResponsive.css":"02PNv","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","9109abcddbc32765":"81yxq","3da62328f7f38aed":"50hP2","d44efc154979113b":"bfufz","3451d7df9502a63e":"iBvDq","6029749e354c71be":"gXT8z","fe864829a613f6f1":"kxFDk","b738ff7422f7a6d2":"dpGV3","e22c9eeeac92652a":"ixWWi","eae30639a0cc5606":"6dbos","cf57f748a3057d01":"l1zXw","739eeb6d8140fa63":"2rtmc","da7317abcdf6140b":"9WrKD"}],"cCmbh":[function() {},{}],"02PNv":[function() {},{}],"81yxq":[function(require,module,exports,__globalThis) {
+},{"./Models.css":"cCmbh","./ModelsResponsive.css":"02PNv","9109abcddbc32765":"81yxq","3da62328f7f38aed":"50hP2","d44efc154979113b":"bfufz","3451d7df9502a63e":"iBvDq","6029749e354c71be":"gXT8z","fe864829a613f6f1":"kxFDk","b738ff7422f7a6d2":"dpGV3","e22c9eeeac92652a":"ixWWi","eae30639a0cc5606":"6dbos","cf57f748a3057d01":"l1zXw","739eeb6d8140fa63":"2rtmc","da7317abcdf6140b":"9WrKD","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"cCmbh":[function() {},{}],"02PNv":[function() {},{}],"81yxq":[function(require,module,exports,__globalThis) {
 module.exports = module.bundle.resolve("model_1.ea3b7ad6.webp") + "?" + Date.now();
 
 },{}],"50hP2":[function(require,module,exports,__globalThis) {

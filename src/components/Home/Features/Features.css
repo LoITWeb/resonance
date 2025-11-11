@@ -72,10 +72,10 @@
 }
 
 .features-slide img {
-	/* width: 100%;
+	max-width: 100vw;
 	height: 100%;
 	object-fit: cover;
-	display: block; */
+	display: block;
 	transition: transform 0.3s ease;
 }
 

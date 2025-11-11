@@ -7,3 +7,23 @@
 		height: 800px;
 	}
 }
+
+@media (max-width: 590px) {
+	.sub {
+		padding-top: 42px;
+	}
+
+	.sub_text {
+		font-size: 60px;
+	}
+}
+
+@media (max-width: 420px) {
+	.sub_text {
+		font-size: 42px;
+	}
+
+	.sub_price {
+		font-size: 18px;
+	}
+}

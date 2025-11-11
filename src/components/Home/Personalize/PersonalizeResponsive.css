@@ -1,18 +1,12 @@
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
 	.personalize-slide {
-		width: 80vw;
-		height: auto;
-	}
-
-	.personalize-slide img {
-		width: 340px;
+		width: 30vw;
 	}
 }
 
 @media (max-width: 900px) {
 	.personalize-slide {
 		width: 50vw;
-		height: 520px;
 	}
 }
 
@@ -24,10 +18,18 @@
 
 @media (max-width: 590px) {
 	.personalize {
-		padding: 24px 0 24px 24px;
+		padding: 42px 0 80px 24px;
+	}
+
+	.personalize_title {
+		font-size: 42px;
+	}
+
+	.personalize_text {
+		font-size: 18px;
 	}
 
 	.personalize-slide {
 		width: 80vw;
 	}
-} */
+}

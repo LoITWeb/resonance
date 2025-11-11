@@ -1,5 +1,8 @@
-.top_color {
+.top {
 	padding: 80px 120px;
+}
+
+.top_color {
 	display: flex;
 	align-items: start;
 }
@@ -47,7 +50,7 @@
 }
 
 .top_slide img {
-	width: 100%;
+	width: 100vw;
 	height: 100%;
 	object-fit: contain;
 	transition: transform 0.3s ease;

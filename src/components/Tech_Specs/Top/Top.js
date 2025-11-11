@@ -4,6 +4,9 @@ import { initTopSlider } from "/src/scripts/top-slider.js";
 const top_1Url = new URL("./images/top_1.webp", import.meta.url).href;
 const top_2Url = new URL("./images/top_2.webp", import.meta.url).href;
 const top_3Url = new URL("./images/top_3.webp", import.meta.url).href;
+const top_mobile_1Url = new URL("./images/top_mobile_1.webp", import.meta.url).href;
+const top_mobile_2Url = new URL("./images/top_mobile_2.webp", import.meta.url).href;
+const top_mobile_3Url = new URL("./images/top_mobile_3.webp", import.meta.url).href;
 
 let topDestroy = null;
 
@@ -16,13 +19,22 @@ export function Top() {
 					<div class="slider_block">
           	<div class="top_slider">
             	<div class="top_slide">
-              	<img src="${top_1Url}" alt="Yellow headphones">
+              	<picture>
+            			<source srcset="${top_mobile_1Url}" media="(max-width: 768px)">
+            			<img src="${top_1Url}" alt="Yellow headphones">
+          			</picture>
             	</div>
             	<div class="top_slide active">
-              	<img src="${top_2Url}" alt="Green headphones">
+              	<picture>
+            			<source srcset="${top_mobile_2Url}" media="(max-width: 768px)">
+            			<img src="${top_2Url}" alt="Green headphones">
+          			</picture>
             	</div>
             	<div class="top_slide">
-              	<img src="${top_3Url}" alt="Red headphones">
+              	<picture>
+            			<source srcset="${top_mobile_3Url}" media="(max-width: 768px)">
+            			<img src="${top_3Url}" alt="Red headphones">
+          			</picture>
             	</div>
           	</div>
 						<div class="top_dots">

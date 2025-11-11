@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+	.top_color {
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.top_slider {
+		width: 320px;
+		height: 360px;
+	}
+
+	.top_dots {
+		padding-top: 80px;
+		gap: 26px;
+	}
+
+	.top_dots .dot {
+		width: 32px;
+		height: 32px;
+	}
+}
+
+@media (max-width: 590px) {
+	.top {
+		padding: 42px 10px;
+	}
+}
+
+@media (max-width: 420px) {
+	.top_slider {
+		width: 270px;
+		height: 310px;
+	}
+
+	.top_dots {
+		width: 290px;
+		justify-content: start;
+	}
+}

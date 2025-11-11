@@ -1,0 +1,19 @@
+@media (max-width: 1200px) {
+	.tech_specs_block {
+		padding: 42px 24px;
+	}
+}
+
+@media (max-width: 900px) {
+	.tech_specs_block {
+		flex-direction: column;
+	}
+
+	.tech_title {
+		margin-bottom: 24px;
+	}
+
+	.tech_text {
+		width: 100%;
+	}
+}

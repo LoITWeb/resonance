@@ -874,6 +874,42 @@ h1, h2, h3, h4, h5, h6, p {
   transform: scale(1.03);
 }
 
+@media (width <= 1200px) {
+  .personalize-slide {
+    width: 30vw;
+  }
+}
+
+@media (width <= 900px) {
+  .personalize-slide {
+    width: 50vw;
+  }
+}
+
+@media (width <= 768px) {
+  .personalize-slide {
+    width: 70vw;
+  }
+}
+
+@media (width <= 590px) {
+  .personalize {
+    padding: 42px 0 80px 24px;
+  }
+
+  .personalize_title {
+    font-size: 42px;
+  }
+
+  .personalize_text {
+    font-size: 18px;
+  }
+
+  .personalize-slide {
+    width: 80vw;
+  }
+}
+
 .sub {
   text-align: center;
   background-image: image-set("feature.3ad7ef5c.webp" 1x, "feature@2x.9a700a2c.webp" 2x);

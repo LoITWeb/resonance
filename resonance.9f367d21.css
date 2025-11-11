@@ -1145,6 +1145,26 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 700;
 }
 
+@media (width <= 1200px) {
+  .tech_specs_block {
+    padding: 42px 24px;
+  }
+}
+
+@media (width <= 900px) {
+  .tech_specs_block {
+    flex-direction: column;
+  }
+
+  .tech_title {
+    margin-bottom: 24px;
+  }
+
+  .tech_text {
+    width: 100%;
+  }
+}
+
 .models {
   text-align: center;
   padding: 80px 142px;

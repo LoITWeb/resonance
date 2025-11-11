@@ -6,6 +6,6 @@ export function Home() {
     ${Carousel()}                                                                                      
     ${Features()}                                                                                      
     ${Personalize()}                                                                                      
-    ${/* Sub() */ ''}                                                                                      
+    ${Sub()}                                                                                      
   `;
 }

@@ -4,10 +4,8 @@
 	padding-top: 80px;
 	text-align: center;
 	background-position: bottom;
-	background-image: image-set(
-		url("./images/feature.webp") 1x,
-		url("./images/feature@2x.webp") 2x
-	);
+	background-image: image-set(url("./images/feature.webp") 1x,
+			url("./images/feature@2x.webp") 2x);
 	background-repeat: no-repeat;
 	background-size: cover;
 }

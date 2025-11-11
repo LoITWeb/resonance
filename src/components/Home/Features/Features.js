@@ -2,40 +2,42 @@ import "./Features.css";
 import "./FeaturesResponsive.css";
 import { initFeaturesSlider } from "/src/scripts/features-slider.js";
 const featuresUrl = new URL("./images/features.webp", import.meta.url).href;
-const features_2Url = new URL("./images/features.webp", import.meta.url).href;
-const features_3Url = new URL("./images/features.webp", import.meta.url).href;
-const features_4Url = new URL("./images/features.webp", import.meta.url).href;
-const features_5Url = new URL("./images/features.webp", import.meta.url).href;
-const features_6Url = new URL("./images/features.webp", import.meta.url).href;
-const features_7Url = new URL("./images/features.webp", import.meta.url).href;
+const features_mobileUrl = new URL("./images/features_mobile.webp", import.meta.url).href;
 const featuresSlides = [
 	{
 		text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
 		img: featuresUrl,
+		imgMobile: features_mobileUrl,
 	},
 	{
 		text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
 		img: featuresUrl,
+		imgMobile: features_mobileUrl,
 	},
 	{
 		text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
 		img: featuresUrl,
+		imgMobile: features_mobileUrl,
 	},
 	{
 		text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
 		img: featuresUrl,
+		imgMobile: features_mobileUrl,
 	},
 	{
 		text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
 		img: featuresUrl,
+		imgMobile: features_mobileUrl,
 	},
 	{
 		text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
 		img: featuresUrl,
+		imgMobile: features_mobileUrl,
 	},
 	{
 		text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
 		img: featuresUrl,
+		imgMobile: features_mobileUrl,
 	},
 ];
 
@@ -48,7 +50,10 @@ export function Features() {
       <div class="features-slide ${i % 2 === 1 ? "two" : ""}">
         <div class="features-card">
           <p>${slide.text}</p>
-          <img src="${slide.img}" alt="Feature ${i + 1}">
+          <picture>
+            <source srcset="${slide.imgMobile}" media="(max-width: 900px)">
+            <img src="${slide.img}" alt="Feature ${i + 1}">
+          </picture>
         </div>
       </div>
     `

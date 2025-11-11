@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+	.sub {
+		background-image: image-set(url("./images/feature_mobile.webp") 1x,
+				url("./images/feature_mobile@2x.webp") 2x);
+		background-position: center;
+		background-size: cover;
+		height: 800px;
+	}
+}

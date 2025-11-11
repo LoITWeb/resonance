@@ -990,9 +990,12 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+.top {
+  padding: 80px 120px;
+}
+
 .top_color {
   align-items: start;
-  padding: 80px 120px;
   display: flex;
 }
 
@@ -1040,7 +1043,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .top_slide img {
   object-fit: contain;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   transition: transform .3s;
 }
@@ -1068,6 +1071,46 @@ h1, h2, h3, h4, h5, h6, p {
 .top_dots .dot.active {
   opacity: 1;
   transform: scale(1.2);
+}
+
+@media (width <= 768px) {
+  .top_color {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .top_slider {
+    width: 320px;
+    height: 360px;
+  }
+
+  .top_dots {
+    gap: 26px;
+    padding-top: 80px;
+  }
+
+  .top_dots .dot {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (width <= 590px) {
+  .top {
+    padding: 42px 10px;
+  }
+}
+
+@media (width <= 420px) {
+  .top_slider {
+    width: 270px;
+    height: 310px;
+  }
+
+  .top_dots {
+    justify-content: start;
+    width: 290px;
+  }
 }
 
 .tech_specs_block {

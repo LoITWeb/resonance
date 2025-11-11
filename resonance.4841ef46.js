@@ -1440,7 +1440,7 @@ var _indexJs = require("./index.js");
 function Tech_Specs() {
     return `
     ${(0, _indexJs.Top)()}                                                                                      
-    ${(0, _indexJs.FeaturesTech)()}    
+    ${''}    
   `;
 }
 
@@ -1462,6 +1462,9 @@ var _topSliderJs = require("/src/scripts/top-slider.js");
 const top_1Url = new URL(require("5d257e368412debb")).href;
 const top_2Url = new URL(require("4775c61317bf9bff")).href;
 const top_3Url = new URL(require("61c925ad04d0ecda")).href;
+const top_mobile_1Url = new URL(require("e66a5b05acc2066d")).href;
+const top_mobile_2Url = new URL(require("c8aac8a3b5f3e1d0")).href;
+const top_mobile_3Url = new URL(require("2a0ab9c56edeb350")).href;
 let topDestroy = null;
 function Top() {
     const markup = `
@@ -1472,13 +1475,22 @@ function Top() {
 					<div class="slider_block">
           	<div class="top_slider">
             	<div class="top_slide">
-              	<img src="${top_1Url}" alt="Yellow headphones">
+              	<picture>
+            			<source srcset="${top_mobile_1Url}" media="(max-width: 768px)">
+            			<img src="${top_1Url}" alt="Yellow headphones">
+          			</picture>
             	</div>
             	<div class="top_slide active">
-              	<img src="${top_2Url}" alt="Green headphones">
+              	<picture>
+            			<source srcset="${top_mobile_2Url}" media="(max-width: 768px)">
+            			<img src="${top_2Url}" alt="Green headphones">
+          			</picture>
             	</div>
             	<div class="top_slide">
-              	<img src="${top_3Url}" alt="Red headphones">
+              	<picture>
+            			<source srcset="${top_mobile_3Url}" media="(max-width: 768px)">
+            			<img src="${top_3Url}" alt="Red headphones">
+          			</picture>
             	</div>
           	</div>
 						<div class="top_dots">
@@ -1503,7 +1515,7 @@ function Top() {
     return markup;
 }
 
-},{"./Top.css":"7l8g6","./TopResponsive.css":"2BsDR","/src/scripts/top-slider.js":"dQkby","5d257e368412debb":"4IWYa","4775c61317bf9bff":"82MW4","61c925ad04d0ecda":"gLOYk","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7l8g6":[function() {},{}],"2BsDR":[function() {},{}],"dQkby":[function(require,module,exports,__globalThis) {
+},{"./Top.css":"7l8g6","./TopResponsive.css":"2BsDR","/src/scripts/top-slider.js":"dQkby","5d257e368412debb":"4IWYa","4775c61317bf9bff":"82MW4","61c925ad04d0ecda":"gLOYk","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","e66a5b05acc2066d":"8FNPR","c8aac8a3b5f3e1d0":"8zRfn","2a0ab9c56edeb350":"eelOR"}],"7l8g6":[function() {},{}],"2BsDR":[function() {},{}],"dQkby":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "initTopSlider", ()=>initTopSlider);
@@ -1564,6 +1576,15 @@ module.exports = module.bundle.resolve("top_2.0b2a9f7b.webp") + "?" + Date.now()
 
 },{}],"gLOYk":[function(require,module,exports,__globalThis) {
 module.exports = module.bundle.resolve("top_3.d9d8555e.webp") + "?" + Date.now();
+
+},{}],"8FNPR":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("top_mobile_1.1997c364.webp") + "?" + Date.now();
+
+},{}],"8zRfn":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("top_mobile_2.e78a6320.webp") + "?" + Date.now();
+
+},{}],"eelOR":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("top_mobile_3.320082f5.webp") + "?" + Date.now();
 
 },{}],"kktqC":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

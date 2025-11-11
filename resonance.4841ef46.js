@@ -946,7 +946,7 @@ function Home() {
     ${(0, _indexJs.Carousel)()}                                                                                      
     ${(0, _indexJs.Features)()}                                                                                      
     ${(0, _indexJs.Personalize)()}                                                                                      
-    ${''}                                                                                      
+    ${(0, _indexJs.Sub)()}                                                                                      
   `;
 }
 
@@ -1116,40 +1116,42 @@ var _featuresCss = require("./Features.css");
 var _featuresResponsiveCss = require("./FeaturesResponsive.css");
 var _featuresSliderJs = require("/src/scripts/features-slider.js");
 const featuresUrl = new URL(require("93dc288f40d6bb7c")).href;
-const features_2Url = new URL(require("93dc288f40d6bb7c")).href;
-const features_3Url = new URL(require("93dc288f40d6bb7c")).href;
-const features_4Url = new URL(require("93dc288f40d6bb7c")).href;
-const features_5Url = new URL(require("93dc288f40d6bb7c")).href;
-const features_6Url = new URL(require("93dc288f40d6bb7c")).href;
-const features_7Url = new URL(require("93dc288f40d6bb7c")).href;
+const features_mobileUrl = new URL(require("af4d33c7504574")).href;
 const featuresSlides = [
     {
         text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
-        img: featuresUrl
+        img: featuresUrl,
+        imgMobile: features_mobileUrl
     },
     {
         text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
-        img: featuresUrl
+        img: featuresUrl,
+        imgMobile: features_mobileUrl
     },
     {
         text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
-        img: featuresUrl
+        img: featuresUrl,
+        imgMobile: features_mobileUrl
     },
     {
         text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
-        img: featuresUrl
+        img: featuresUrl,
+        imgMobile: features_mobileUrl
     },
     {
         text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
-        img: featuresUrl
+        img: featuresUrl,
+        imgMobile: features_mobileUrl
     },
     {
         text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
-        img: featuresUrl
+        img: featuresUrl,
+        imgMobile: features_mobileUrl
     },
     {
         text: "Deep lows. Lush mids. Airy highs. All perfectly in balance.",
-        img: featuresUrl
+        img: featuresUrl,
+        imgMobile: features_mobileUrl
     }
 ];
 let featuresDestroy = null;
@@ -1158,7 +1160,10 @@ function Features() {
       <div class="features-slide ${i % 2 === 1 ? "two" : ""}">
         <div class="features-card">
           <p>${slide.text}</p>
-          <img src="${slide.img}" alt="Feature ${i + 1}">
+          <picture>
+            <source srcset="${slide.imgMobile}" media="(max-width: 900px)">
+            <img src="${slide.img}" alt="Feature ${i + 1}">
+          </picture>
         </div>
       </div>
     `).join("");
@@ -1185,7 +1190,7 @@ function Features() {
     return markup;
 }
 
-},{"./Features.css":"8v7x1","./FeaturesResponsive.css":"k5pf9","/src/scripts/features-slider.js":"pifHw","93dc288f40d6bb7c":"9AGU5","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8v7x1":[function() {},{}],"k5pf9":[function() {},{}],"pifHw":[function(require,module,exports,__globalThis) {
+},{"./Features.css":"8v7x1","./FeaturesResponsive.css":"k5pf9","/src/scripts/features-slider.js":"pifHw","93dc288f40d6bb7c":"9AGU5","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","af4d33c7504574":"6DlEU"}],"8v7x1":[function() {},{}],"k5pf9":[function() {},{}],"pifHw":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "initFeaturesSlider", ()=>initFeaturesSlider);
@@ -1258,6 +1263,9 @@ function initFeaturesSlider(rootSelector = ".features-slider") {
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"9AGU5":[function(require,module,exports,__globalThis) {
 module.exports = module.bundle.resolve("features.3784dacd.webp") + "?" + Date.now();
+
+},{}],"6DlEU":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("features_mobile.90f79473.webp") + "?" + Date.now();
 
 },{}],"gkwl6":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

@@ -957,6 +957,15 @@ h1, h2, h3, h4, h5, h6, p {
   top: 2px;
 }
 
+@media (width <= 768px) {
+  .sub {
+    background-image: image-set("feature_mobile.e5618dad.webp" 1x, "feature_mobile@2x.d78ad5dd.webp" 2x);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+  }
+}
+
 .top_color {
   align-items: start;
   padding: 80px 120px;

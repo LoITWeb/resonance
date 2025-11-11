@@ -3,7 +3,7 @@ node_modules/
 
 # папки сборки и кеша
 dist/
-.cache/
+.parcel-cache/
 
 # системные файлы
 .DS_Store

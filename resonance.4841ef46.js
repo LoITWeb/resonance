@@ -1185,7 +1185,7 @@ function Features() {
     return markup;
 }
 
-},{"./Features.css":"8v7x1","./FeaturesResponsive.css":"k5pf9","/src/scripts/features-slider.js":"pifHw","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","93dc288f40d6bb7c":"9AGU5"}],"8v7x1":[function() {},{}],"k5pf9":[function() {},{}],"pifHw":[function(require,module,exports,__globalThis) {
+},{"./Features.css":"8v7x1","./FeaturesResponsive.css":"k5pf9","/src/scripts/features-slider.js":"pifHw","93dc288f40d6bb7c":"9AGU5","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8v7x1":[function() {},{}],"k5pf9":[function() {},{}],"pifHw":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "initFeaturesSlider", ()=>initFeaturesSlider);
@@ -1304,6 +1304,8 @@ function Personalize() {
     const markup = `
     <section class="personalize">
       <div class="container">
+				<h2 class="personalize_title">Every Detail matters</h2>
+				<p class="personalize_text">From the stitch to the signal, precision lives here.</p>
         <div class="personalize-slider">
           <div class="personalize-track">
             ${slidesMarkup}
@@ -1324,7 +1326,7 @@ function Personalize() {
     return markup;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","./PersonalizeResponsive.css":"1UBb0","./Personalize.css":"lAbQi","/src/scripts/personalize-slider.js":"ejDnP","7b4a2b9f23730fa":"abrrz","ea1552819f0d295d":"jx43S","d3dcc20de9975ce2":"fKkIw"}],"1UBb0":[function() {},{}],"lAbQi":[function() {},{}],"ejDnP":[function(require,module,exports,__globalThis) {
+},{"./Personalize.css":"lAbQi","./PersonalizeResponsive.css":"1UBb0","/src/scripts/personalize-slider.js":"ejDnP","7b4a2b9f23730fa":"abrrz","ea1552819f0d295d":"jx43S","d3dcc20de9975ce2":"fKkIw","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"lAbQi":[function() {},{}],"1UBb0":[function() {},{}],"ejDnP":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "initPersonalizeSlider", ()=>initPersonalizeSlider);

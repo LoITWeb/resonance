@@ -73,6 +73,8 @@ var e={};let t=new URL(e=import.meta.resolve("aYQdk")).href,s=new URL(e).href,a=
     `).join(""),i=`
     <section class="personalize">
       <div class="container">
+				<h2 class="personalize_title">Every Detail matters</h2>
+				<p class="personalize_text">From the stitch to the signal, precision lives here.</p>
         <div class="personalize-slider">
           <div class="personalize-track">
             ${a}
@@ -200,7 +202,7 @@ var e={};let t=new URL(e=import.meta.resolve("aYQdk")).href,s=new URL(e).href,a=
 				</div>
     </section>
   `}    
-  `}let R=new URL(import.meta.resolve("h4Xjm")).href,I=new URL(import.meta.resolve("jOsUM")).href,A=new URL(import.meta.resolve("7oSY9")).href,U=new URL(import.meta.resolve("hRlNE")).href,S=new URL(import.meta.resolve("8tE4z")).href,q=new URL(import.meta.resolve("Pt9n5")).href,z=new URL(import.meta.resolve("ljO7q")).href,D=new URL(import.meta.resolve("blSOU")).href,N=new URL(import.meta.resolve("93D64")).href,P=new URL(import.meta.resolve("kI3M0")).href,T=new URL(import.meta.resolve("itMTf")).href,C=new URL(import.meta.resolve("aj4J1")).href;function B(){return`
+  `}let R=new URL(import.meta.resolve("h4Xjm")).href,I=new URL(import.meta.resolve("jOsUM")).href,A=new URL(import.meta.resolve("7oSY9")).href,U=new URL(import.meta.resolve("hRlNE")).href,S=new URL(import.meta.resolve("8tE4z")).href,z=new URL(import.meta.resolve("Pt9n5")).href,q=new URL(import.meta.resolve("ljO7q")).href,D=new URL(import.meta.resolve("blSOU")).href,N=new URL(import.meta.resolve("93D64")).href,P=new URL(import.meta.resolve("kI3M0")).href,T=new URL(import.meta.resolve("itMTf")).href,C=new URL(import.meta.resolve("aj4J1")).href;function F(){return`
     
     <section class="models">
 			<div class="container">
@@ -228,7 +230,7 @@ var e={};let t=new URL(e=import.meta.resolve("aYQdk")).href,s=new URL(e).href,a=
 								<p class="compare_text">Personalized Spatial Audio</p>
 							</div>
 							<div class="compare_block">
-								<img src="${z}" alt="Icon">
+								<img src="${q}" alt="Icon">
 								<p class="compare_text">Lossless Audio</p>
 							</div>
 							<div class="compare_block">
@@ -279,7 +281,7 @@ var e={};let t=new URL(e=import.meta.resolve("aYQdk")).href,s=new URL(e).href,a=
 								<p class="compare_text">None</p>
 							</div>
 							<div class="compare_block">
-								<img src="${q}" alt="Icon">
+								<img src="${z}" alt="Icon">
 								<p class="compare_text">Hearing Test and Hearing Protection</p>
 							</div>
 							<div class="compare_block">
@@ -304,7 +306,7 @@ var e={};let t=new URL(e=import.meta.resolve("aYQdk")).href,s=new URL(e).href,a=
 			</div>
 		</section>
                                                                                         		
-  `}function F(){let e=document.querySelector(".main"),t={"/":y,"/tech-specs":$,"/compare":B},s=location.hash.replace("#","")||"/";e.innerHTML=t[s]?t[s]():"<h1>404 Not Found</h1>"}window.addEventListener("hashchange",F),window.addEventListener("load",F),document.getElementById("app").innerHTML=`
+  `}function B(){let e=document.querySelector(".main"),t={"/":y,"/tech-specs":$,"/compare":F},s=location.hash.replace("#","")||"/";e.innerHTML=t[s]?t[s]():"<h1>404 Not Found</h1>"}window.addEventListener("hashchange",B),window.addEventListener("load",B),document.getElementById("app").innerHTML=`
   <div class="wrapper">                                                                            
     
     <header class="header">
@@ -375,5 +377,5 @@ var e={};let t=new URL(e=import.meta.resolve("aYQdk")).href,s=new URL(e).href,a=
     </footer>
   
   </div>
-`,function(){let e=document.querySelector(".mobile-nav-btn"),t=document.querySelector(".mobile-nav"),s=document.querySelector(".nav-icon"),a=document.querySelectorAll(".mobile-nav a");if(!e||!t)return;let i=0;function o(){document.body.style.position="",document.body.style.top="",document.body.style.left="",document.body.style.right="",document.body.style.width="",document.body.style.paddingRight="",document.body.classList.remove("no-scroll"),window.scrollTo(0,i),t.classList.remove("mobile-nav--open"),s.classList.remove("nav-icon--active")}e.addEventListener("click",function(){if(t.classList.contains("mobile-nav--open"))o();else{let e;i=window.scrollY,e=window.innerWidth-document.documentElement.clientWidth,document.body.style.position="fixed",document.body.style.top=`-${i}px`,document.body.style.left="0",document.body.style.right="0",document.body.style.width="100%",document.body.style.paddingRight=`${e}px`,document.body.classList.add("no-scroll"),t.classList.add("mobile-nav--open"),s.classList.add("nav-icon--active")}}),a.forEach(e=>e.addEventListener("click",o)),document.addEventListener("click",s=>{!t.classList.contains("mobile-nav--open")||t.contains(s.target)||e.contains(s.target)||o()})}(),F(),document.addEventListener("click",e=>{let t=e.target.closest("a");if(!t)return;let s=t.getAttribute("href");("#"===s||"#!"===s||""===s||"javascript:void(0)"===s)&&(e.preventDefault(),e.stopPropagation(),t.style.transition="opacity 0.15s ease",t.style.opacity="0.6",setTimeout(()=>t.style.opacity="1",150))});
-//# sourceMappingURL=resonance.a2993090.js.map
+`,function(){let e=document.querySelector(".mobile-nav-btn"),t=document.querySelector(".mobile-nav"),s=document.querySelector(".nav-icon"),a=document.querySelectorAll(".mobile-nav a");if(!e||!t)return;let i=0;function o(){document.body.style.position="",document.body.style.top="",document.body.style.left="",document.body.style.right="",document.body.style.width="",document.body.style.paddingRight="",document.body.classList.remove("no-scroll"),window.scrollTo(0,i),t.classList.remove("mobile-nav--open"),s.classList.remove("nav-icon--active")}e.addEventListener("click",function(){if(t.classList.contains("mobile-nav--open"))o();else{let e;i=window.scrollY,e=window.innerWidth-document.documentElement.clientWidth,document.body.style.position="fixed",document.body.style.top=`-${i}px`,document.body.style.left="0",document.body.style.right="0",document.body.style.width="100%",document.body.style.paddingRight=`${e}px`,document.body.classList.add("no-scroll"),t.classList.add("mobile-nav--open"),s.classList.add("nav-icon--active")}}),a.forEach(e=>e.addEventListener("click",o)),document.addEventListener("click",s=>{!t.classList.contains("mobile-nav--open")||t.contains(s.target)||e.contains(s.target)||o()})}(),B(),document.addEventListener("click",e=>{let t=e.target.closest("a");if(!t)return;let s=t.getAttribute("href");("#"===s||"#!"===s||""===s||"javascript:void(0)"===s)&&(e.preventDefault(),e.stopPropagation(),t.style.transition="opacity 0.15s ease",t.style.opacity="0.6",setTimeout(()=>t.style.opacity="1",150))});
+//# sourceMappingURL=resonance.a2810d38.js.map

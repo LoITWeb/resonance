@@ -742,7 +742,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .features-slide img {
+  object-fit: cover;
+  max-width: 100vw;
+  height: 100%;
   transition: transform .3s;
+  display: block;
 }
 
 .features-slide:hover img {
@@ -963,6 +967,26 @@ h1, h2, h3, h4, h5, h6, p {
     background-position: center;
     background-size: cover;
     height: 800px;
+  }
+}
+
+@media (width <= 590px) {
+  .sub {
+    padding-top: 42px;
+  }
+
+  .sub_text {
+    font-size: 60px;
+  }
+}
+
+@media (width <= 420px) {
+  .sub_text {
+    font-size: 42px;
+  }
+
+  .sub_price {
+    font-size: 18px;
   }
 }
 

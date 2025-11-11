@@ -1190,7 +1190,7 @@ function Features() {
     return markup;
 }
 
-},{"./Features.css":"8v7x1","./FeaturesResponsive.css":"k5pf9","/src/scripts/features-slider.js":"pifHw","93dc288f40d6bb7c":"9AGU5","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","af4d33c7504574":"6DlEU"}],"8v7x1":[function() {},{}],"k5pf9":[function() {},{}],"pifHw":[function(require,module,exports,__globalThis) {
+},{"./Features.css":"8v7x1","./FeaturesResponsive.css":"k5pf9","/src/scripts/features-slider.js":"pifHw","93dc288f40d6bb7c":"9AGU5","af4d33c7504574":"6DlEU","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8v7x1":[function() {},{}],"k5pf9":[function() {},{}],"pifHw":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "initFeaturesSlider", ()=>initFeaturesSlider);

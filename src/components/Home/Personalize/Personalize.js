@@ -46,6 +46,8 @@ export function Personalize() {
 	const markup = `
     <section class="personalize">
       <div class="container">
+				<h2 class="personalize_title">Every Detail matters</h2>
+				<p class="personalize_text">From the stitch to the signal, precision lives here.</p>
         <div class="personalize-slider">
           <div class="personalize-track">
             ${slidesMarkup}
